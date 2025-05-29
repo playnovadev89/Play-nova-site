@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlayNova Dev</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #1e1e1e;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00aaff;
+    }
+    .hero {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 40px;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 0.3em;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+    .hero button {
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background-color: #005fc4;
+    }
+    .hero img {
+      max-width: 400px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e1e1e;
+      color: #888;
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text {
+        max-width: 100%;
+      }
+      .hero img {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PlayNova Dev</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Indie Game Developer</h2>
+      <p>Welcome to PlayNova Dev! I create unique and engaging games for various platforms using Unity and Android tools.</p>
+      <button onclick="location.href='#games'">View Games</button>
+    </div>
+    <img src="https://img.icons8.com/fluency/480/game-controller.png" alt="Game Icon"/>
+  </section>
+
+  <footer>
+    © 2025 PlayNova Dev. All rights reserved.
+  </footer>
+
+</body>
+</html>
